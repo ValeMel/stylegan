@@ -1,6 +1,6 @@
 # StyleGAN3
 NVidia's StyleGAN series of papers and models aim at generating synthetic high resolution images from real images with controled modifications.
-It provides a ready to use set of networks to generate fake images and a set of curated high quality images (FFHQ for Fake Faces High Quality).
+It provides a ready to use set of networks to generate fake images and a curated dataset of high quality images (FFHQ for Flickr Faces High Quality).
 Applications are in photo edition (photoshop like), domain translation (winter to summer, old to young, etc.) and video generation.
 It is AI and ANN powered. The NN learns from a set of images (either faces, or cats, or cars, etc) over several days on multiple high-end GPUs. 
 It can as well be used as a pre-trained model and not require all the training and either fine-tuning it through transfer learning or just using the pre-trained models as is.
