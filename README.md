@@ -82,8 +82,15 @@ The code relies heavily on custom PyTorch extensions that are compiled on the fl
 See Troubleshooting for help on common installation and run-time problems.
 
 
-# How to fine-train StyleGAN3? Transfer Learning
+Then, run for instance:
+\# Fine-tune StyleGAN3-R for MetFaces-U using 1 GPU, starting from the pre-trained FFHQ-U pickle.
+python train.py --outdir=~/training-runs --cfg=stylegan3-r --data=~/datasets/metfacesu-1024x1024.zip \
+    --gpus=8 --batch=32 --gamma=6.6 --mirror=1 --kimg=5000 --snap=5 \
+    --resume=https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-r-ffhqu-1024x1024.pkl
 
 
-# How to run StyleGAN3 to generate synthetic images
+<!-- # How to fine-train StyleGAN3? Transfer Learning -->
+
+
+<!-- # How to run StyleGAN3 to generate synthetic images -->
 
