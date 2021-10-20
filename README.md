@@ -1,8 +1,9 @@
 # stylegan3
 NVidia's StyleGan series of papers and models aim at generating synthetic images from real images with controled modifications.
+It provides a ready to use set of networks to generate fake images and a set of high quality images.
 Applications are in photo edition (photoshop like), domain translation (winter to summer, old to young, etc.) and video generation.
-It is AI and ANN powered. The NN learns from a set of images (faces, fish, beaches, flowers, beds, etc) over several days on multiple high-end GPUs. 
-It can as well be used as a pre-trained model and not require all this training.
+It is AI and ANN powered. The NN learns from a set of images (either faces, or fish, or beaches, or flowers, or beds, etc) over several days on multiple high-end GPUs. 
+It can as well be used as a pre-trained model and not require all the training.
 
 
 
@@ -12,7 +13,7 @@ The other player model is a generator. It is just specified the characteristics 
 
 The competition can be formalized by a minimax game with a value function reflecting the binary cross-entropy and the sochasticity of the process.
 
-StyleGAN enabled to build an image as a hierarchical synthesis. This was enabled by disentanglement. Disentanglement was obtained among others through progressively growing GANs with finer resolution (from coarse features like pose, face shape, color to finer like 
+On top of this GAN architecture, StyleGAN enabled to build an image as a hierarchical synthesis. The point is to control the various aspects of the desired output image at various resolution levels. It was enabled by disentanglement. Disentanglement was obtained among others through progressively growing GANs with finer resolution (from coarse features like pose, and overall color, to face shape, or hair, stubble, freckles) 
 
 
 
