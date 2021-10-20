@@ -34,9 +34,7 @@ The next model solved 2 issues observed in the first version: droplet or blob ef
 
 . keeping network topology fix and changing input image resolution at training stage instead to hold layered control of features
 
-. normalization
-
-. taking new quality metrics: Perceptual Path Length, PPL, rather than Precision & Recall, enabling smoother interpolations
+. taking new quality metrics: Perceptual Path Length, PPL, rather than Precision & Recall and normalizing less in turn. This enables smoother interpolations and eliminates droplet artifact which resulted probably from disconnection between feature mapping and AdaIN instance normalization
 
 . faster training
 
