@@ -11,10 +11,14 @@ How this is achieved is all based on Generative Adversarial Networks --> GAN. Re
 
 The other player model is a generator. It is just specified the characteristics of the desired output and it produces it. Its objective is to produce an image as real-looking as possible and thus deceiving the discriminator.
 
-The competition can be formalized by a minimax game with a value function reflecting the binary cross-entropy and the sochasticity of the process.
+The competition can be formalized in technical terms by a minimax game with a value function reflecting the binary cross-entropy and the sochasticity of the process.
 
-On top of this GAN architecture, StyleGAN enabled to build an image as a hierarchical synthesis. The point is to control the various aspects of the desired output image at various resolution levels. It was enabled by disentanglement. Disentanglement was obtained among others through progressively growing GANs with finer resolution (from coarse features like pose, and overall color, to face shape, or hair, stubble, freckles) 
+On top of this GAN architecture, StyleGAN enabled to build an image as a hierarchical synthesis of various layers of details of an image. The point is to control the various aspects of the desired output image at various resolution levels. It was enabled by 
 
+. disentanglement. Disentanglement was obtained among others through progressively growing GANs with finer resolution (from coarse features like pose, and overall color, to face shape, or hair, stubble, freckles) 
+
+. start generation from a constant and not a random variable. Noise is introduced in StyleGAN* at other levels. 
+. integrate the learning into a mapping network and inserting performing affine scaling and biasing of Adaptive Instance normalization on top at various levels and in each layer
 
 
 
