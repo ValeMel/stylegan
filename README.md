@@ -58,7 +58,8 @@ PyTorch implementation of the NeurIPS 2021 paper
 Different configurations for different input resolutions
 
 Requirements
-. Linux and Windows are supported, but we recommend Linux for performance and compatibility reasons.
+
+. Linux and Windows are supported, but the authors recommend Linux for performance and compatibility reasons.
 
 . 1–8 high-end NVIDIA GPUs with at least 12 GB of memory. We have done all testing and development using Tesla V100 and A100 GPUs.
 
