@@ -1,8 +1,8 @@
 # stylegan3
 NVidia's StyleGan series of papers and models aim at generating synthetic high resolution images from real images with controled modifications.
-It provides a ready to use set of networks to generate fake images and a set of high quality images.
+It provides a ready to use set of networks to generate fake images and a set of high quality images (FFHQ for Fake Faces High Quality).
 Applications are in photo edition (photoshop like), domain translation (winter to summer, old to young, etc.) and video generation.
-It is AI and ANN powered. The NN learns from a set of images (either faces, or fish, or beaches, or flowers, or beds, etc) over several days on multiple high-end GPUs. 
+It is AI and ANN powered. The NN learns from a set of images (either faces, or cats, or cars, or beaches, or flowers, or beds, etc) over several days on multiple high-end GPUs. 
 It can as well be used as a pre-trained model and not require all the training.
 
 
@@ -23,7 +23,7 @@ On top of this GAN architecture, StyleGAN enabled to build an image as a hierarc
 
 . start generation from a constant and not a latent variable. Random noise is introduced in StyleGAN* at other levels. 
 
-. integrate the learning into a mapping network and performing affine scaling and biasing of Adaptive Instance normalization on top at various levels and in each layer; this replaces the pixelnorm original GAN normalization and enables control of styles for each feature
+. integrate the learning into a mapping network and performing affine scaling and biasing of Adaptive Instance normalization on top at various levels and in each layer, then mixing the styles thus created; this replaces the pixelnorm original GAN normalization and enables control of styles for each feature
 
 The quality of the result achieved is then measured through Frechet Inception Distance (measures distance between two densities) and Precision and Recall. 
 
@@ -34,7 +34,7 @@ The next model solved 2 issues observed in the first version: droplet or blob ef
 
 . keeping network topology fix and changing input image resolution at training stage instead to hold layered control of features
 
-. taking new quality metrics: Perceptual Path Length, PPL, rather than Precision & Recall and normalizing less in turn. This enables smoother interpolations and eliminates droplet artifact which resulted probably from disconnection between feature mapping and AdaIN instance normalization
+. taking new quality metrics: Perceptual Path Length, PPL, records small results to small changes in inputs as expected. Previously used Precision and Recall metric was blind to image quality. Together with normalizing lazily in turn, after separating normalization and modulation. This enables smoother interpolations and eliminates droplet artifact which resulted probably from disconnection between feature mapping and AdaIN instance normalization
 
 . faster training
 
