@@ -1,5 +1,6 @@
 # stylegan3
-NVidia's StyleGan series aims at generating synthetic images from real images with controled modifications
+NVidia's StyleGan series of papers and models aims at generating synthetic images from real images with controled modifications.
+It is done by AI and ANN. The NN learn from a set of images (faces, fish, beaches, flowers, beds, etc).
 
 
 # How to train NVidia's stylegan3 
