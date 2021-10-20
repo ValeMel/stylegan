@@ -1,5 +1,5 @@
-# stylegan3
-NVidia's StyleGan series of papers and models aim at generating synthetic high resolution images from real images with controled modifications.
+# StyleGAN3
+NVidia's StyleGAN series of papers and models aim at generating synthetic high resolution images from real images with controled modifications.
 It provides a ready to use set of networks to generate fake images and a set of high quality images (FFHQ for Fake Faces High Quality).
 Applications are in photo edition (photoshop like), domain translation (winter to summer, old to young, etc.) and video generation.
 It is AI and ANN powered. The NN learns from a set of images (either faces, or cats, or cars, or beaches, or flowers, or beds, etc) over several days on multiple high-end GPUs. 
@@ -47,14 +47,17 @@ Improvements include:
 
 . texture sticking
 
-. translation and rotation equivariance
-
-. still faster training
+. translation and rotation equivariance: in StyleGAN2, distortion of faces when being shifted or rotated; here solved in 2 configurations of the network: StyleGAN3-T and StyleGAN3-R (which covers both equivariances)
 
 
-# How to train NVidia's stylegan3 
+
+# How to train NVidia's StyleGAN3 
 PyTorch implementation of the NeurIPS 2021 paper
 
 
-# How to run stylegan3
+
+# How to fine-train StyleGAN3? Transfer Learning
+
+
+# How to run StyleGAN3 to generate synthetic images
 
