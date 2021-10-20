@@ -10,7 +10,7 @@ GAN
 ---
 How this is achieved is all based on Generative Adversarial Networks --> GAN. Relying on game theory, this architecture enables to put in competition 2 players, each of which is a machine learning model. 1 model is a discriminator: it receives an image as input and its output is whether the input image is fake or real. The objective of this model is to be as accurate as possible in its discrimination of real and fake images.
 
-The other player model is a generator. It is just specified the characteristics of the desired output and it produces it. Its objective is to produce an image as real-looking as possible and thus deceiving the discriminator.
+The other player model is a generator. It is just specified the characteristics of the desired output and it yields this output. Its objective is to produce an image as real-looking as possible and thus deceiving the discriminator.
 
 The competition can be formalized in technical terms by a minimax game with a value function reflecting the binary cross-entropy and the sochasticity of the process.
 
