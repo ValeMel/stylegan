@@ -18,9 +18,10 @@ On top of this GAN architecture, StyleGAN enabled to build an image as a hierarc
 . disentanglement. Disentanglement was obtained among others through progressively growing GANs with finer resolution (from coarse features like pose, and overall color, to face shape, or hair, stubble, freckles) 
 
 . start generation from a constant and not a random variable. Noise is introduced in StyleGAN* at other levels. 
-. integrate the learning into a mapping network and inserting performing affine scaling and biasing of Adaptive Instance normalization on top at various levels and in each layer
 
+. integrate the learning into a mapping network and performing affine scaling and biasing of Adaptive Instance normalization on top at various levels and in each layer; this replaces the pixelnorm original GAN normalization 
 
+The quality of the result achieved is then measured through Frechet Inception Distance and Perceptual Path Length
 
 # How to train NVidia's stylegan3 
 PyTorch implementation of the NeurIPS 2021 paper
