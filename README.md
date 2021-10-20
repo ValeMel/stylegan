@@ -50,9 +50,13 @@ Improvements include:
 . translation and rotation equivariance: in StyleGAN2, distortion of faces when being shifted or rotated; here solved in 2 configurations of the network: StyleGAN3-T and StyleGAN3-R (which covers both equivariances)
 
 
+StyleGAN2-ADA for smaller input sets, with fewer images for training
+
 
 # How to train NVidia's StyleGAN3 
 PyTorch implementation of the NeurIPS 2021 paper
+Different configurations for different input resolutions
+
 
 
 
