@@ -19,7 +19,7 @@ GAN -> StyleGAN
 ---------------
 On top of this GAN architecture, StyleGAN enabled to build an image as a hierarchical synthesis of various layers of details of an image. The point is to control the various aspects of the desired output image at various resolution levels. It was enabled by 
 
-. disentanglement. Disentanglement was obtained among others through progressively growing GANs with finer resolution (from coarse features like pose, and overall color, to face shape, or hair, stubble, freckles) 
+. disentanglement. Disentanglement was obtained among others through progressively growing GANs with finer resolution as we go deeper in the overall network (from coarse features like pose, and overall color, to face shape, to hair, or even stubble and freckles) 
 
 . start generation from a constant and not a latent variable. Random noise is introduced in StyleGAN* at other levels. 
 
