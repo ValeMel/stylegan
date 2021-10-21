@@ -98,5 +98,5 @@ python train.py --outdir=\~/training-runs --cfg=stylegan3-r --data=\~/datasets/m
 
 # References
 https://ngc.nvidia.com/catalog/models/nvidia:research:stylegan3
-\\
+
 https://github.com/NVlabs/stylegan3
