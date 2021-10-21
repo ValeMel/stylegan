@@ -96,3 +96,6 @@ python train.py --outdir=\~/training-runs --cfg=stylegan3-r --data=\~/datasets/m
 
 <!-- # How to run StyleGAN3 to generate synthetic images -->
 
+# References
+https://ngc.nvidia.com/catalog/models/nvidia:research:stylegan3
+https://github.com/NVlabs/stylegan3
