@@ -98,7 +98,9 @@ Preparing datasets
 Datasets are stored as uncompressed ZIP archives containing uncompressed PNG files and a metadata file dataset.json for labels. Custom datasets can be created from a folder containing images; see python dataset_tool.py --help for more information. Alternatively, the folder can also be used directly as a dataset, without running it through dataset_tool.py first, but doing so may lead to suboptimal performance.
 
 
-FFHQ: Download the Flickr-Faces-HQ dataset as 1024x1024 images and create a zip archive using dataset_tool.py:
+FFHQ: Download the Flickr-Faces-HQ dataset as 1024x1024 images and create a zip archive using dataset_tool.py: https://github.com/NVlabs/stylegan3#:~:text=Flickr-Faces-HQ%20dataset
+
+https://github.com/NVlabs/ffhq-dataset
 
 
 ## Original 1024x1024 resolution.
