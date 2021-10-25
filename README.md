@@ -56,6 +56,7 @@ StyleGAN2-ADA for smaller input sets, with fewer images for training
 # How to train NVidia's StyleGAN3 
 PyTorch implementation of the NeurIPS 2021 paper
 Different configurations for different input resolutions
+Quoting Nvidia's documents,
 
 Requirements
 
@@ -91,8 +92,22 @@ python train.py --outdir=\~/training-runs --cfg=stylegan3-r --data=\~/datasets/m
     --resume=https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-r-ffhqu-1024x1024.pkl
 
 
-<!-- # How to fine-train StyleGAN3? Transfer Learning -->
+# How to fine-train StyleGAN3? Transfer Learning
+Preparing datasets
 
+Datasets are stored as uncompressed ZIP archives containing uncompressed PNG files and a metadata file dataset.json for labels. Custom datasets can be created from a folder containing images; see python dataset_tool.py --help for more information. Alternatively, the folder can also be used directly as a dataset, without running it through dataset_tool.py first, but doing so may lead to suboptimal performance.
+
+
+FFHQ: Download the Flickr-Faces-HQ dataset as 1024x1024 images and create a zip archive using dataset_tool.py:
+
+
+## Original 1024x1024 resolution.
+python dataset_tool.py --source=/tmp/images1024x1024 --dest=~/datasets/ffhq-1024x1024.zip
+
+## Scaled down 256x256 resolution.
+python dataset_tool.py --source=/tmp/images1024x1024 --dest=~/datasets/ffhq-256x256.zip \
+    --resolution=256x256
+See the FFHQ README for information on how to obtain the unaligned FFHQ dataset images. Use the same steps as above to create a ZIP archive for training and validation.
 
 <!-- # How to run StyleGAN3 to generate synthetic images -->
 
